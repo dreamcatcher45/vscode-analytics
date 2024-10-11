@@ -42,7 +42,7 @@ VSCode Analytics stores all data locally on your machine. No data is sent to any
 
 ## Feedback and Contributions
 
-If you encounter any issues or have suggestions for improvements, please file an issue on our [GitHub repository](https://github.com/yourusername/vscode-analytics).
+If you encounter any issues or have suggestions for improvements, please file an issue on our [GitHub repository](https://github.com/dreamcatcher45/vscode-analytics).
 
 Contributions are always welcome! Please read our contributing guidelines before submitting a pull request.
 

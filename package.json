@@ -4,10 +4,10 @@
   "description": "Track time usage and display analytics for VS Code",
   "version": "0.0.1",
   "publisher": "dreamcatcher45",
-  "homepage": "",
+  "homepage": "https://github.com/dreamcatcher45/vscode-analytics",
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/dreamcatcher45/vscode-analytics"
   },
   "tags": [
     "vscode-analytics","analytics","vscode","dreamcatcher45","tracker","productivity","usage"    
