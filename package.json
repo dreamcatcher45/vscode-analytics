@@ -3,6 +3,16 @@
   "displayName": "vscode-analytics",
   "description": "Track time usage and display analytics for VS Code",
   "version": "0.0.1",
+  "publisher": "dreamcatcher45",
+  "homepage": "",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "tags": [
+    "vscode-analytics","analytics","vscode","dreamcatcher45","tracker","productivity","usage"    
+  ],
+  "icon": "media/icon.png",
   "engines": {
     "vscode": "^1.94.0"
   },
@@ -45,7 +55,6 @@
     "typescript": "^5.6.2"
   },
   "dependencies": {
-    "chart.js": "^4.4.4",
     "moment": "^2.30.1"
   }
 }

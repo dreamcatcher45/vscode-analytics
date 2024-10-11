@@ -1,9 +1,11 @@
-# Change Log
+# Changelog
 
-All notable changes to the "vscode-analytics" extension will be documented in this file.
+## [1.0.0] - 2024-10-11
 
-Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
-
-## [Unreleased]
-
-- Initial release
+### Added
+- Initial release of VSCode Analytics
+- Automatic time tracking for coding sessions
+- Analytics view with interactive pie chart
+- Filtering options for time range and projects
+- CSV export functionality for filtered data
+- Status bar item showing current session duration
