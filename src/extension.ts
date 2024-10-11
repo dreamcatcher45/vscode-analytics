@@ -206,21 +206,27 @@ function getAnalyticsHtml() {
                     }
                 });
 
-                function updateTable() {
-                    const tbody = document.querySelector('#dataTable tbody');
-                    tbody.innerHTML = '';
-                    const filteredData = filterData();
-                    filteredData.sort((a, b) => new Date(b.date) - new Date(a.date));
-                    filteredData.forEach(session => {
-                        const row = tbody.insertRow();
-                        row.insertCell().textContent = session.workspace;
-                        row.insertCell().textContent = session.date;
-                        row.insertCell().textContent = formatDuration(session.duration);
-                        row.insertCell().textContent = session.startTime;
-                        row.insertCell().textContent = session.endTime;
-                    });
-                }
+               function updateTable() {
+    const tbody = document.querySelector('#dataTable tbody');
+    tbody.innerHTML = '';
+    const filteredData = filterData();
+    
+    // Sort the data in reverse chronological order
+    filteredData.sort((a, b) => {
+        const dateA = new Date(a.date + 'T' + a.startTime);
+        const dateB = new Date(b.date + 'T' + b.startTime);
+        return dateB.getTime() - dateA.getTime();
+    });
 
+    filteredData.forEach(session => {
+        const row = tbody.insertRow();
+        row.insertCell().textContent = session.workspace;
+        row.insertCell().textContent = session.date;
+        row.insertCell().textContent = formatDuration(session.duration);
+        row.insertCell().textContent = session.startTime;
+        row.insertCell().textContent = session.endTime;
+    });
+}
                 function updateProjectFilter() {
                     const projectFilter = document.getElementById('projectFilter');
                     const projects = [...new Set(sessionData.map(session => session.workspace))];
